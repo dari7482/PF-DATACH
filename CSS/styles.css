@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #010A4F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div .logoImg {
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  margin: 5px 5px 5px 25px;
+  border-radius: 10%;
+}
+@media screen and (max-width: 1400px) {
+  header nav input:checked ~ ul {
+    display: block;
+  }
+  header nav .titulosInferior {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    right: 0px;
+    background: #010A4F;
+  }
+  header nav .titulosInferior li {
+    margin-bottom: 20px;
+  }
+  header nav .titulosInferior li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+  }
+  header nav .titulosSuperior {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    color: red;
+    z-index: 1;
+    background: #010A4F;
+    margin: 0px;
+  }
+  header nav .titulosSuperior li {
+    margin-bottom: 20px;
+  }
+  header nav .titulosSuperior li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+header nav input {
+  display: none;
+}
+header nav label {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  header nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: #f6f6f6;
+    align-items: center;
+  }
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 1400px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+main h1,
+main h2 {
+  text-align: center;
+}
+main .bullBearImage img {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  justify-content: center;
+  position: relative;
+}
+main .title h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  font-size: 2.5vw;
+}
+main .title h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  transform: translateX(-50%);
+}
+main article .sectionBeneficios h2 {
+  margin-top: 6rem;
+  font-size: 64px;
+  font-family: sans-serif;
+}
+main article .card {
+  width: 300px;
+  max-height: 40vh;
+  min-width: 300px;
+  overflow: auto;
+  height: 600px;
+  border-radius: 0.25em;
+  background-color: white;
+  box-shadow: 0em 0em 1.5em rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+main article .cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+}
+main article .card img {
+  margin-bottom: 5px;
+}
+main article .card h1 {
+  margin: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+main article .card p {
+  margin: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+footer {
+  color: white;
+  background-color: #010A4F;
+}
+footer h1 {
+  align-items: flex-start;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 3rem;
+}
+footer p {
+  padding: 5px;
+}
+footer img {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+footer .footerHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+footer .footerHeader div {
+  width: 30vw;
+  text-align: center;
+}
+footer .footerDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  padding-bottom: 25px;
+  column-gap: 8rem;
+  flex-wrap: wrap;
+}
+footer .footerDiv img {
+  width: 250px;
+  height: 250px;
+  margin-left: 2rem;
+}
+
+header {
+  background: #010A4F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div .logoImg {
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  margin: 5px 5px 5px 25px;
+  border-radius: 10%;
+}
+@media screen and (max-width: 1400px) {
+  header nav input:checked ~ ul {
+    display: block;
+  }
+  header nav .titulosInferior {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    right: 0px;
+    background: #010A4F;
+  }
+  header nav .titulosInferior li {
+    margin-bottom: 20px;
+  }
+  header nav .titulosInferior li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+  }
+  header nav .titulosSuperior {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    color: red;
+    z-index: 1;
+    background: #010A4F;
+    margin: 0px;
+  }
+  header nav .titulosSuperior li {
+    margin-bottom: 20px;
+  }
+  header nav .titulosSuperior li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+header nav input {
+  display: none;
+}
+header nav label {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  header nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: #f6f6f6;
+    align-items: center;
+  }
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 1400px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mainLogin {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.mainLogin section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 10px;
+}
+.mainLogin section .card {
+  width: 40rem;
+  border: 2px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 6rem;
+  box-shadow: 0 6px 10px rgba(0, 34, 158, 0.05), 0 1px 18px rgba(0, 34, 158, 0.05);
+}
+.mainLogin section .card .logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 2rem;
+}
+.mainLogin section .card .logo div img {
+  max-width: 200px;
+  max-height: 200px;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 20px;
+}
+.mainLogin section .card .logo div {
+  font-family: sans-serif;
+}
+.mainLogin section .card .usuario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+.mainLogin section .card .usuario input {
+  width: 80%;
+  max-height: 5rem;
+  min-height: 3rem;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+.mainLogin section .card .usuario button {
+  width: 80%;
+  max-height: 5rem;
+  min-height: 3rem;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #010A4F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.mainLogin section .card .usuario button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  background-color: #010A4F;
+}
+footer h1 {
+  align-items: flex-start;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 3rem;
+}
+footer p {
+  padding: 5px;
+}
+footer img {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+footer .footerHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+footer .footerHeader div {
+  width: 30vw;
+  text-align: center;
+}
+footer .footerDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  padding-bottom: 25px;
+  column-gap: 8rem;
+  flex-wrap: wrap;
+}
+footer .footerDiv img {
+  width: 250px;
+  height: 250px;
+  margin-left: 2rem;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+/*# sourceMappingURL=styles.css.map */

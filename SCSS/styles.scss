@@ -1,0 +1,8 @@
+@import "utilidades/reset";
+@import "utilidades/variables";
+@import "html/home";
+@import "html/logIn";
+
+body {
+    background-color: $background-body;
+}
