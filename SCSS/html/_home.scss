@@ -67,6 +67,8 @@ header {
                         text-decoration: none;
                         font-size: 16px;
                         padding: 15px;
+                        cursor: not-allowed;
+
                     }
                 }
             }
@@ -98,7 +100,7 @@ header {
             }
         }
 
-        ul {
+        .titulosSuperior {
             display: flex;
             list-style-type: none;
             gap: 15px;
@@ -110,21 +112,26 @@ header {
             @media screen and (max-width:1400px) {
                 display: none;
             }
-        }
 
+            li {
+                a {
+                    color: whitesmoke;
+                    text-decoration: none;
+                    font-size: 16px;
 
-
-
-
-        li {
-            a {
-                color: whitesmoke;
-                text-decoration: none;
-                font-size: 16px;
-
-
+                }
             }
+
+
         }
+
+
+
+
+
+
+
+
 
     }
 
@@ -185,10 +192,10 @@ main {
         .card {
 
             width: 300px;
-            max-height: 40vh;
+            max-height: 60vh;
             min-width: 300px;
-            overflow: auto;
-            height: 600px;
+
+            height: 350px;
 
             border-radius: 0.25em;
             background-color: white;
@@ -218,6 +225,7 @@ main {
 
         .card h1 {
             margin: 20px;
+            font-size: 1.5rem;
             text-align: center;
             font-family: $fontFamily-card;
 
@@ -231,67 +239,6 @@ main {
 
 
     }
-
-
-
-}
-
-footer {
-    color: white;
-    background-color: #010A4F;
-
-    h1 {
-        align-items: flex-start;
-        margin-left: 10px;
-        padding: 5px;
-        font-size: 3rem;
-    }
-
-    p {
-        padding: 5px;
-    }
-
-    img {
-        background-color: $background-body;
-        border-radius: 10px;
-
-    }
-
-    .footerHeader {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px;
-        padding: 15px;
-        align-items: center;
-        flex-wrap: wrap;
-        column-gap: 10px;
-
-        div {
-            width: 30vw;
-            text-align: center;
-
-        }
-
-    }
-
-
-    .footerDiv {
-        display: flex;
-        align-items: center;
-        margin-left: 5rem;
-        margin-top: 3rem;
-        padding-bottom: 25px;
-        column-gap: 8rem;
-        flex-wrap: wrap;
-
-        img {
-            width: 250px;
-            height: 250px;
-            margin-left: 2rem;
-        }
-
-    }
-
 
 
 
