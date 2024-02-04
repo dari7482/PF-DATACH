@@ -385,9 +385,17 @@ footer .footerHeader {
   flex-wrap: wrap;
   column-gap: 10px;
 }
+footer .footerHeader .logo {
+  width: 100px;
+  height: 100px;
+}
 footer .footerHeader div {
   width: 30vw;
   text-align: center;
+}
+footer .footerHeader img {
+  width: 50px;
+  height: 50px;
 }
 footer .footerDiv {
   display: flex;
@@ -1077,6 +1085,14 @@ footer .footerDiv img {
 .footerMySpace .footerHeaderMySpace div {
   width: 30vw;
   text-align: center;
+}
+.footerMySpace .footerHeaderMySpace img {
+  width: 50px;
+  height: 50px;
+}
+.footerMySpace .footerHeaderMySpace .logo {
+  width: 100px;
+  height: 100px;
 }
 
 body {
